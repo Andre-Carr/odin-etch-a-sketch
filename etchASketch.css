@@ -1,0 +1,24 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.tileBoard {
+    width: 960px;
+    height: 960px;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+ }
+ 
+ .tileRow {
+    display: flex;
+    width: 80%;
+    height: 5%;
+ }
+
+.tile {
+    width: 5%;
+    height: 100%;
+    border: 1px solid black;
+ }
