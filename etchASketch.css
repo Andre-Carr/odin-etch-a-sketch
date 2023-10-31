@@ -4,21 +4,24 @@ html, body {
 }
 
 .tileBoard {
-    width: 960px;
-    height: 960px;
+    width: 480px;
+    height: 480px;
     display: flex;
     flex-direction: column;
-    padding: 10%;
+    border: 5px solid red;
  }
  
  .tileRow {
     display: flex;
-    width: 80%;
-    height: 5%;
+    height: 6.25%;
  }
 
 .tile {
-    width: 5%;
-    height: 100%;
+    width: 6.25%;
+    background-color: white;
     border: 1px solid black;
+ }
+
+ .tileBlack {
+    background-color: black;
  }
