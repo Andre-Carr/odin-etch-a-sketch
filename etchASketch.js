@@ -10,11 +10,16 @@ tileBoard.addEventListener('mouseover', (event) => {
     }
 });
 
-const setTileSizeButton = document.querySelector('.setTileSize');
+const setTileSizeButton = document.querySelector('.setTileSizeButton');
 setTileSizeButton.addEventListener('click', () => {
     let size = prompt("Set Tile Size (Max of 100x100)");
     size = (size > 100) ? 100 : size;
     createTileBoard(size);
+});
+
+const clearButton = document.querySelector('.clearButton');
+clearButton.addEventListener('click', () => {
+    clearTiles();
 });
 
 function createTileBoard(amount) {
@@ -29,4 +34,11 @@ function createTileBoard(amount) {
         }
         tileBoard.appendChild(tileRow);
     }
+}
+
+function clearTiles() {
+    const tileList = document.querySelectorAll('.tile');
+    tileList.forEach((tile)=> {
+        tile.classList.remove('tileBlack');
+    });
 }
