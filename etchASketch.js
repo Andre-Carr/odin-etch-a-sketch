@@ -6,7 +6,7 @@ window.addEventListener('load', () => {
 tileBoard.addEventListener('mouseover', (event) => {
     let target = event.target;
     if(target.classList.contains('tile')) {
-        target.classList.toggle("tileBlack");
+        target.classList.add("tileBlack");
     }
 });
 
