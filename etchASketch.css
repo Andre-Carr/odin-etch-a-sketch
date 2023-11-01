@@ -18,9 +18,48 @@ html, body {
 
 .tile {
     flex: 1 1 0%;
-    background-color: white;
  }
 
- .tileBlack {
-    background-color: black;
+ .tileBlackZero {
+    background-color: rgba(0,0,0, 0.0);
+ }
+
+ .tileBlackOne {
+    background-color: rgba(0,0,0, 0.1);
+ }
+
+ .tileBlackTwo {
+    background-color: rgba(0,0,0, 0.2);
+ }
+
+ .tileBlackThree {
+    background-color: rgba(0,0,0, 0.3);
+ }
+
+ .tileBlackFour {
+    background-color: rgba(0,0,0, 0.4);
+ }
+
+ .tileBlackFive {
+    background-color: rgba(0,0,0, 0.5);
+ }
+
+ .tileBlackSix {
+    background-color: rgba(0,0,0, 0.6);
+ }
+
+ .tileBlackSeven {
+    background-color: rgba(0,0,0, 0.7);
+ }
+
+ .tileBlackEight {
+    background-color: rgba(0,0,0, 0.8);
+ }
+
+ .tileBlackNine {
+    background-color: rgba(0,0,0, 0.9);
+ }
+
+ .tileBlackTen {
+    background-color: rgba(0,0,0, 1);
  }
