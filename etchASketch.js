@@ -3,37 +3,42 @@ window.addEventListener('load', () => {
     createTileBoard(16);
 });
 
+/* 
+ * Use event delegation to capture mousover event as there is a
+ * a large number of items that need to be captured and allows 
+ * for the number of items to change dynamically.
+*/
 tileBoard.addEventListener('mouseover', (event) => {
     let target = event.target;
     if(target.classList.contains('tile')) {
-        if(target.classList.contains('tileBlackZero')) {
+        if (target.classList.contains('tileBlackZero')) {
             target.classList.remove('tileBlackZero')
             target.classList.add("tileBlackOne");
-        } else if(target.classList.contains('tileBlackOne')) {
+        } else if (target.classList.contains('tileBlackOne')) {
             target.classList.remove('tileBlackOne');
             target.classList.add("tileBlackTwo");
-        } else if(target.classList.contains('tileBlackTwo')) {
+        } else if (target.classList.contains('tileBlackTwo')) {
             target.classList.remove('tileBlackTwo');
             target.classList.add("tileBlackThree");
-        } else if(target.classList.contains('tileBlackThree')) {
+        } else if (target.classList.contains('tileBlackThree')) {
             target.classList.remove('tileBlackThree');
             target.classList.add("tileBlackFour");
-        } else if(target.classList.contains('tileBlackFour')) {
+        } else if (target.classList.contains('tileBlackFour')) {
             target.classList.remove('tileBlackFour');
             target.classList.add("tileBlackFive");
-        } else if(target.classList.contains('tileBlackFive')) {
+        } else if (target.classList.contains('tileBlackFive')) {
             target.classList.remove('tileBlackFive');
             target.classList.add("tileBlackSix");
-        } else if(target.classList.contains('tileBlackSix')) {
+        } else if (target.classList.contains('tileBlackSix')) {
             target.classList.remove('tileBlackSix');
             target.classList.add("tileBlackSeven");
-        } else if(target.classList.contains('tileBlackSeven')) {
+        } else if (target.classList.contains('tileBlackSeven')) {
             target.classList.remove('tileBlackSeven');
             target.classList.add("tileBlackEight");
-        } else if(target.classList.contains('tileBlackEight')) {
+        } else if (target.classList.contains('tileBlackEight')) {
             target.classList.remove('tileBlackEight');
             target.classList.add("tileBlackNine");
-        } else if(target.classList.contains('tileBlackNine')) {
+        } else if (target.classList.contains('tileBlackNine')) {
             target.classList.remove('tileBlackNine');
             target.classList.add("tileBlackTen");
         }
@@ -80,7 +85,7 @@ function clearTiles() {
         tile.classList.remove('tileBlackEight');
         tile.classList.remove('tileBlackNine');
         tile.classList.remove('tileBlackTen');
-        
+
         tile.classList.add("tileBlackZero");
     });
 }
